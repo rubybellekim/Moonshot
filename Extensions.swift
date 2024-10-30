@@ -6,3 +6,18 @@
 //
 
 import Foundation
+import SwiftUI
+
+struct CrewMember {
+    let role: String
+    let astronaut: Astronaut
+}
+
+struct SectionDivider: View {
+    var body: some View {
+        Rectangle()
+            .frame(height: 2)
+            .foregroundStyle(.lightBackground)
+            .padding(.vertical)
+    }
+}
